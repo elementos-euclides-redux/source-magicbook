@@ -6,6 +6,10 @@ This is a chapter written in markdown.
 
 You can link to other files simply by making an internal [link](#second-chapter-id). The build process will automatically search for this ID in all files, and append the filename if needed for the particular format.
 
+## This is another test
+
+Hola, soy un parrafo sin acento.
+
 ## Images
 
 You can insert images simply by adding an image tag with the name of the image. This will look for an image located in `images/bruce.jpg`, but you can easily change this location if you want.
