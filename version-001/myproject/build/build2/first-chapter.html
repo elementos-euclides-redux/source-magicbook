@@ -1,4 +1,6 @@
-<!DOCTYPE html><html><head>
+<!DOCTYPE html>
+<html>
+  <head>
     <meta charset="utf-8">
     <title>My Book</title>
     
@@ -7,34 +9,50 @@
   </head>
   <body data-type="book">
     <div class="container">
-      <section data-type="chapter" id="markdown-chapter-4WbKTev"><h1>Markdown chapter</h1>
-<p>This is a chapter written in markdown.</p>
-<section data-type="sect1" id="internal-links-YlG0T2j"><h1>Internal links</h1>
-<p>You can link to other files simply by making an internal <a href="second-chapter.html#second-chapter-id" data-type="xref">link</a>. The build process will automatically search for this ID in all files, and append the filename if needed for the particular format.</p>
-</section><section data-type="sect1" id="this-is-another-test-5vqdTZW"><h1>This is another test</h1>
-<p>Hola, soy un parrafo sin acento.</p>
-</section><section data-type="sect1" id="images-2WK7TpW"><h1>Images</h1>
-<p>You can insert images simply by adding an image tag with the name of the image. This will look for an image located in <code>images/bruce.jpg</code>, but you can easily change this location if you want.</p>
-<p><img src="assets\bruce.jpg" alt="Picture of Bruce Springsteen"></p>
-</section><section data-type="sect1" id="code-examples-RW2wT7v"><h1>Code examples</h1>
-<p>Code examples can be written using the markdown syntax, and they
-will automatically be converted to HTMLBook programlistings. Here's an
-example of using the <code>console.log</code> function.</p>
-<pre data-type="programlisting" data-code-language="js"><code>console.log("hello");
-</code></pre>
-</section><section data-type="sect1" id="footnotes-MvVZTqv"><h1>Footnotes</h1>
-<p>You can also write footnotes using the Markdown syntax<span data-type="footnote"><a href="#fn1">1</a></span>, or the HTMLBook syntax<span data-type="footnote"><a href="#fn2">2</a></span>.</p>
-<p>Then you use the following <code>footnotes</code> liquid tag to insert the footnote references on the page. This is often done at the bottom of the page.</p>
-<ol data-type="footnotes">
-    <li id="fn1">They are great</li>
-    <li id="fn2">They are great too</li>
-</ol>
+      <section data-type="chapter" id="capitulo-1-angulos-lineas-paralelas-paralelogramos-4WbKTev">
 
-</section></section>
+  <h1>Capitulo 1 Angulos, Lineas Paralelas, Paralelogramos</h1>
+
+  <section data-type="sect1" id="proposicion-11-construyendo-un-triangulo-equilatero-YlG0T2j">
+
+    <h1><em>Proposición 1.1</em> CONSTRUYENDO UN TRIÁNGULO EQUILATERO.</h1>
+
+    <figure>      
+      <figcaption>Proposición 1</figcaption>
+      <img src="\..\images\Proposition 1.1\Proposition 1.1.svg" alt="Proposición 1">
+    </figure>
+
+    <section data-type="sect2" id="ejercicio-1-5vqdTZW">
+
+      <h2>Ejercicio 1</h2>
+
+      <p>Si los segmentos $\overline{AF}$ y $\overline{BF}$ son construidos,
+        demuestra que la figura $\boxdot ACBF$ es un rombo.</p>
+
+        <section data-type="sect3" id="solucion-2WK7TpW">
+
+          <h3>Solución</h3>
+            
+            <figure>      
+                <figcaption>Proposición 1</figcaption>
+                <img src="\..\images\Proposition 1.1\Proposition 1.1.svg" alt="Proposición 1">
+            </figure>
+
+            <p>Puesto que A es el centro del círculo \Circle A, se deduce que \overline{AF}=\overline{AB} [Def. 1.33]. Puesto que B es el centro del círculo \Circle B, \overline{BF}=\overline{AB} [Def. 1.33]. Puesto que \overline{AF}=\overline{BF}=\overline{AB}=\overline{AC}=\overline{BC}, se deduce que \boxdot ACBF es un rombo. </p>
+
+        </section>
+
+    </section>
+  </section>
+
+
+  <p id="second-chapter-id">Este es otro ejemplo de parrafo</p>
+
+
+</section>
 <a id="prev-link" href="toc.html">Previous: </a>
 
 <a id="next-link" href="second-chapter.html">Next: Capitulo 1 Angulos, Lineas Paralelas, Paralelogramos</a>
     </div>
-  
-
-</body></html>
+  </body>
+</html>
