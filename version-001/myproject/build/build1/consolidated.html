@@ -1,9 +1,8 @@
 <!DOCTYPE html><html><head>
     <meta charset="utf-8">
     <title>My Book</title>
-    <script src="assets/scripts.js"></script>
-
-    <link rel="stylesheet" href="assets/pdf.css">
+    
+    <link rel="stylesheet" href="assets\pdf.css">
 
   </head>
   <body data-type="book">
@@ -31,8 +30,23 @@
   </ol>
 </li>
 <li>
-    <a data-toc="chapter" href="#html-chapter-8vy0FZP">HTML Chapter</a>
+    <a data-toc="chapter" href="#capitulo-1-angulos-lineas-paralelas-paralelogramos-8vy0FZP">Capitulo 1 Angulos, Lineas Paralelas, Paralelogramos</a>
+    <ol>
+<li>
+    <a data-toc="sect1" href="#proposicion-11-construyendo-un-triangulo-equilatero-NP3ZF5b">Proposición 1.1 CONSTRUYENDO UN TRIÁNGULO EQUILATERO.</a>
+    <ol>
+<li>
+    <a data-toc="sect2" href="#ejercicio-1-MvwVFNP">Ejercicio 1</a>
+    <ol>
+<li>
+    <a data-toc="sect3" href="#solucion-Vbx4FVb">Solución</a>
   </li>
+  </ol>
+</li>
+  </ol>
+</li>
+  </ol>
+</li>
   </ol>
 </nav>
 
@@ -45,7 +59,7 @@
 <p>Hola, soy un parrafo sin acento.</p>
 </section><section data-type="sect1" id="images-2WK7TpW"><h1>Images</h1>
 <p>You can insert images simply by adding an image tag with the name of the image. This will look for an image located in <code>images/bruce.jpg</code>, but you can easily change this location if you want.</p>
-<p><img src="assets/bruce.jpg" alt="Picture of Bruce Springsteen"></p>
+<p><img src="assets\bruce.jpg" alt="Picture of Bruce Springsteen"></p>
 </section><section data-type="sect1" id="code-examples-RW2wT7v"><h1>Code examples</h1>
 <p>Code examples can be written using the markdown syntax, and they
 will automatically be converted to HTMLBook programlistings. Here's an
@@ -61,11 +75,45 @@ example of using the <code>console.log</code> function.</p>
 </ol>
 
 </section></section>
-<section data-type="chapter" id="html-chapter-8vy0FZP">
+MathJax = {
+  tex: {
+    inlineMath: [['$', '$'], ['\\(', '\\)']]
+  },
+  svg: {
+    fontCache: 'global'
+  }
+};
 
-  <h1>HTML Chapter</h1>
+<section data-type="chapter" id="capitulo-1-angulos-lineas-paralelas-paralelogramos-8vy0FZP">
 
-  <p id="second-chapter-id">This is a chapter written in HTML</p>
+  <h1>Capitulo 1 Angulos, Lineas Paralelas, Paralelogramos</h1>
+
+  <section data-type="sect1" id="proposicion-11-construyendo-un-triangulo-equilatero-NP3ZF5b">
+
+    <h1><em>Proposición 1.1</em> CONSTRUYENDO UN TRIÁNGULO EQUILATERO.</h1>
+
+    <figure>      
+      <figcaption>Proposición 1</figcaption>
+      <img src="\..\images\Proposition 1.1\Proposition 1.1.svg" alt="Proposición 1">
+    </figure>
+
+    <section data-type="sect2" id="ejercicio-1-MvwVFNP">
+
+      <h2>Ejercicio 1</h2>
+
+      <p>Si los segmentos $\overline{AF}$ y $\overline{BF}$ son construidos,
+        demuestra que la figura $\boxdot ACBF$ es un rombo.</p>
+
+        <section data-type="sect3" id="solucion-Vbx4FVb">
+
+          <h3>Solución</h3>
+            
+            <p>Puesto que A es el centro del círculo \Circle A, se deduce que \overline{AF}=\overline{AB} [Def. 1.33]. Puesto que B es el centro del círculo \Circle B, \overline{BF}=\overline{AB} [Def. 1.33]. Puesto que \overline{AF}=\overline{BF}=\overline{AB}=\overline{AC}=\overline{BC}, se deduce que \boxdot ACBF es un rombo. </p>
+
+        </section>
+
+    </section>
+  </section>
 
 
   <p id="second-chapter-id">Este es otro ejemplo de parrafo</p>
