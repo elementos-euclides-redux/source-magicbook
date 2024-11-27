@@ -1,5 +1,5 @@
 {
-  "title" : "My Book",
+  "title" : "Elementos de Euclides Redux",
   "destination" : "build/:build",
   "files" : [
     "content/toc.html",
