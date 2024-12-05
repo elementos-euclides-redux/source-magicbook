@@ -290,8 +290,11 @@ window.addEventListener('scroll', function() {
 includeHTML(); 
 
 
-// JavaScript to toggle the visibility of the "myinfo" text
 document.getElementById("toggleButton").addEventListener("click", function() {
   var info = document.getElementById("myinfo");
-  info.classList.toggle("show"); // Toggle the "show" class
+  if (info) { // Only toggle if the element exists
+    info.classList.toggle("show");
+  } else {
+    console.warn("Element with id 'myinfo' not found.");
+  }
 });
