@@ -288,3 +288,10 @@ window.addEventListener('scroll', function() {
 
 // Finally call this funciton to include HTML
 includeHTML(); 
+
+
+// JavaScript to toggle the visibility of the "myinfo" text
+document.getElementById("toggleButton").addEventListener("click", function() {
+  var info = document.getElementById("myinfo");
+  info.classList.toggle("show"); // Toggle the "show" class
+});

@@ -1059,3 +1059,27 @@ iframe {
       display: none !important;
   }
 }
+
+/* Clickable Info box */ 
+.infotip #myinfo {
+  display: none; /* Initially hide the "myinfo" content */
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-left: 5px solid #3b87f9 !important;
+  padding: 8px 16px 8px 16px;
+  text-align: justify;
+}
+
+.infotip #myinfo.show {
+  display: block; /* Show "myinfo" content when the class 'show' is added */
+}
+
+.infotip strong {
+  cursor: pointer; /* Indicate the text is clickable */
+  color: var(--infotip); /* Optional: Make it look like a link */
+  transition: color 0.3s; /* Smooth transition */
+}
+
+.infotip strong:hover {
+  color: rgba(4, 112, 162, 0.976);
+}
