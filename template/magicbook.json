@@ -22,7 +22,7 @@
       "javascripts" : {
         "files" : ["javascripts/*.js"],
         "destination" : "js/",
-        "compress": true
+        "compress": false
       },
       "fonts": {
         "files": "fonts/*.*",

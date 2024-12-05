@@ -290,11 +290,18 @@ window.addEventListener('scroll', function() {
 includeHTML(); 
 
 
-document.getElementById("toggleButton").addEventListener("click", function() {
-  var info = document.getElementById("myinfo");
-  if (info) { // Only toggle if the element exists
-    info.classList.toggle("show");
+document.addEventListener("DOMContentLoaded", function() {
+  var toggleButton = document.getElementById("toggleButton");
+
+  if (toggleButton) {
+    toggleButton.addEventListener("click", function() {
+      var info = document.getElementById("myinfo");
+      if (info) {
+        info.classList.toggle("show"); // Toggle the "show" class
+      }
+    });
   } else {
-    console.warn("Element with id 'myinfo' not found.");
+    console.warn("Element with id 'toggleButton' not found.");
   }
 });
+
