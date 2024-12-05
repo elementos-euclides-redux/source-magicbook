@@ -300,8 +300,6 @@ document.addEventListener("DOMContentLoaded", function() {
         info.classList.toggle("show"); // Toggle the "show" class
       }
     });
-  } else {
-    console.warn("Element with id 'toggleButton' not found.");
   }
 });
 
