@@ -1,27 +1,33 @@
 {
-  "title" : "My Book",
-  "destination" : "build/:build",
+  "title" : "Elementos de Euclides Redux",
+  "destination" : "build/libro",
   "files" : [
-    "content/toc.html",
-    "content/first-chapter.md",
-    "content/second-chapter.html"
+    "content/index.html",
+    "content/capitulo-01.html",
+    "content/template.html"
   ],
   "builds" : [
-    {
-      "format" : "pdf",
-      "layout" : "layouts/pdf.html",
-      "stylesheets" : {
-        "files" : ["stylesheets/pdf.scss"]
-      }
-    },
     {
       "format" : "html",
       "layout" : "layouts/html.html",
       "stylesheets" : {
-        "files" : ["stylesheets/html.scss"]
+        "files" : ["stylesheets/style.scss"],
+        "destination" : "css",
+        "compress": true
+      },
+      "images" : {
+        "files" : "images/html/**/*.*",
+        "destination" : "imgs/"
       },
       "javascripts" : {
-        "files" : ["javascripts/scripts.js"]
+        "files" : ["javascripts/*.js"],
+        "destination" : "js/",
+        "compress": true
+      },
+      "fonts": {
+        "files": "fonts/*.*",
+        "destination" : "css/fonts",
+        "compress": true
       }
     }
   ]
