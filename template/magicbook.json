@@ -3,6 +3,7 @@
   "destination" : "build/libro",
   "files" : [
     "content/index.html",
+    "content/tabla-de-contenidos.html",
     "content/capitulo-01.html",
     "content/template.html"
   ],
