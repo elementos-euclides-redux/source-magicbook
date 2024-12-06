@@ -1,5 +1,5 @@
 :lang(es) .theorem::before { content: 'Teorema ' counter(theorem) '. ' !important; }
-:lang(es) .lemma::before { content: 'Lema ' counter(theorem) '. ' !important; }
+:lang(es) .lemma::before { content: 'Lema ' counter(lemma) '. ' !important; }
 :lang(es) .corollary::before { content: 'Corolario ' counter(corollary) '. ' !important; }
 :lang(es) .proof::before { content: 'Demostración. ' attr(title) !important; }
 :lang(es) .definition::before { content: 'Definición ' counter(definition) '. ' !important; }
