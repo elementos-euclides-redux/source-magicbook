@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 199.36 116.62">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: gray;
+        stroke: #3400ca;
+        stroke-width: .5px;
+      }
+
+      .cls-1, .cls-2, .cls-3 {
+        stroke-miterlimit: 10;
+      }
+
+      .cls-4 {
+        letter-spacing: -.02em;
+      }
+
+      .cls-4, .cls-5 {
+        font-family: TimesNewRomanPS-ItalicMT, 'Times New Roman';
+        font-size: 11.41px;
+        font-style: italic;
+      }
+
+      .cls-2 {
+        fill: #ccc;
+      }
+
+      .cls-2, .cls-3 {
+        stroke: #000;
+        stroke-width: .25px;
+      }
+
+      .cls-3 {
+        fill: none;
+      }
+    </style>
+  </defs>
+  <g id="Layer_1" data-name="Layer 1">
+    <circle class="cls-3" cx="75.14" cy="56.65" r="49.08"/>
+    <circle class="cls-3" cx="124.22" cy="56.65" r="49.08"/>
+  </g>
+  <g id="Layer_2" data-name="Layer 2">
+    <g>
+      <polygon class="cls-2" points="99.68 14.13 75.14 56.65 124.22 56.65 99.68 14.13"/>
+      <line class="cls-2" x1="75.14" y1="56.65" x2="124.22" y2="56.65"/>
+      <line class="cls-2" x1="99.68" y1="14.13" x2="75.14" y2="56.65"/>
+      <line class="cls-2" x1="124.22" y1="56.65" x2="99.68" y2="14.13"/>
+    </g>
+  </g>
+  <g id="Layer_3" data-name="Layer 3">
+    <circle class="cls-1" cx="26.06" cy="56.65" r="1.79"/>
+    <circle class="cls-1" cx="50.6" cy="99.16" r="1.79"/>
+    <circle class="cls-1" cx="99.68" cy="99.16" r="1.79"/>
+    <circle class="cls-1" cx="148.76" cy="99.16" r="1.79"/>
+    <circle class="cls-1" cx="173.31" cy="56.65" r="1.79"/>
+    <circle class="cls-1" cx="75.14" cy="56.65" r="1.79"/>
+    <circle class="cls-1" cx="124.22" cy="56.65" r="1.79"/>
+    <circle class="cls-1" cx="99.68" cy="14.13" r="1.79"/>
+  </g>
+  <g id="Layer_5" data-name="Layer 5">
+    <text class="cls-4" transform="translate(62.62 60.07)"><tspan x="0" y="0">A</tspan></text>
+    <text class="cls-5" transform="translate(128.31 60.07)"><tspan x="0" y="0">B</tspan></text>
+    <text class="cls-5" transform="translate(95.91 9.63)"><tspan x="0" y="0">C</tspan></text>
+    <text class="cls-5" transform="translate(12.7 60.07)"><tspan x="0" y="0">D</tspan></text>
+    <text class="cls-5" transform="translate(178.04 62.12)"><tspan x="0" y="0">E</tspan></text>
+    <text class="cls-5" transform="translate(95.63 113.12)"><tspan x="0" y="0">F</tspan></text>
+    <text class="cls-5" transform="translate(38.41 111.29)"><tspan x="0" y="0">G</tspan></text>
+    <text class="cls-5" transform="translate(151.69 108.28)"><tspan x="0" y="0">H</tspan></text>
+  </g>
+</svg>

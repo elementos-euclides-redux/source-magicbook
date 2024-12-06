@@ -1,0 +1,30 @@
+<div class="fixed-bar" id="fixed-bar">
+    <div class="link-container">
+        {% if navigation.prev %}
+        <a href="{{ navigation.prev.href }}" class="link" id="prev-link">
+            <span class="arrow"><i class="fa-solid fa-arrow-left"></i></span>
+        </a>
+        {% endif %}
+        <span class="dark-mode-button" id="dark-mode-toggle"><i class="fa-regular fa-sun"></i></span>
+        <span class="support-top-button" id="donate"
+            onclick="document.getElementById('myModal').style.display='block'">
+            <i class="fa-regular fa-heart"></i></span>
+    </div>
+    <div class="link">
+        <a href="tabla-de-contenidos.html" class="link" id="center-link">
+            {% if navigation.prev %}
+            <span class="content-hover-previous">{{navigation.prev.label}}</span>
+            {% endif %} 
+            <span class="content-hover">Tabla de Contenidos</span>
+            <span class="content-original">Euclides Redux</span>
+            {% if navigation.next %}
+            <span class="content-hover-next">{{navigation.next.label}}</span>
+            {% endif %} 
+        </a>
+    </div>
+    {% if navigation.next %}
+    <a href="{{ navigation.next.href }}" class="link" id="next-link">
+        <span class="arrow"><i class="fa-solid fa-arrow-right"></i></span>
+    </a>
+    {% endif %} 
+</div>

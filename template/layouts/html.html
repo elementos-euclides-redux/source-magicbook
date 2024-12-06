@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  {% capture first_h1 %}
+  {{ content | split: '<h1>' | last | split: '</h1>' | first | replace: '<br>', '' | replace: '<b>', '' | replace:
+    '</b>', '' }}
+  {% endcapture %}
+  <title>{{ first_h1 }}</title>
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <meta name="description" content="Elementos de Euclides Redux" />
+  <meta name="author" content="Carlos Julio Islas Bustamante Ledesma">
+  <meta name="keywords" content="geometría,euclidiana" />
+
+  <!--
+    https://www.everywheremarketer.com/blog/ultimate-guide-to-social-meta-tags-open-graph-and-twitter-cards
+  -->
+  <!--Facebook-->
+  <meta property="og:title" content="Elementos de Euclides Redux" />
+  <meta property="og:url" content="add link" />
+  <meta property="og:description" content="Notas de Geometría" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Elementos de Euclides Redux">
+
+  <!--Twitter/X-->
+  <meta name="twitter:title" content="Elementos de Euclides Redux" />
+  <meta name="twitter:site" content="add link" />
+  <meta name="twitter:description" content="Notas de Geometría" />
+  <meta name="twitter:type" content="website" />
+  <meta name="twitter:creator" content="add" />
+
+  <link rel="icon" type="image/png" href="imgs/infinity32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="imgs/infinity16.png" sizes="16x16">
+
+  {{ stylesheets }}
+
+</head>
+
+<body data-type="book" id="top">
+  
+  {% include navigation-es.html %}
+
+  <!-- Main DIV Starts here -->
+  <div class="container">
+    {{ content }}
+  </div>
+  <!-- Main DIV Ends here -->
+
+
+  <!-- The Modal -->
+  <div id="myModal" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content">
+      <div class="modal-header">
+        <span class="close">&times;</span><br />
+        <strong>👋 ¡Hola!</strong>
+      </div>
+      <div class="modal-body">
+  
+        <div w3-include-html="message-modal.html"></div>
+        <br />
+      </div>
+  
+      <div class="modal-footer">
+        ¡Gracias! 🙏 !Realmente aprecio tu apoyo! 🤗
+      </div>
+    </div>
+  
+  </div>
+
+  <!-- Button to Top -->
+  <button onclick="topFunction()" id="toTop" title="Go to top"><i class="fa-solid fa-arrow-up"></i></button>
+
+  <hr>
+
+  {% include footer-es.html %}
+
+  <script src="js/mathjax.js"></script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+  <script src="js/scripts.js"></script>
+  <script async src="js/prism.js"></script>
+</body>
+
+</html>
