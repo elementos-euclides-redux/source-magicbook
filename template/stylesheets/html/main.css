@@ -208,7 +208,7 @@ body {
   margin: 0 auto;
   padding: 2rem 1.25rem;
 
-  counter-reset: lemma theorem corollary definition example sidenote-counter figure-counter;
+  counter-reset: lemma theorem proposition corollary definition example sidenote-counter figure-counter;
   /*section-1 subsection-1 subsubsection-1 section-2 subsection-2 subsubsection-2 section-3 subsection-3 subsubsection-3;*/
 
   color: var(--body-color);
@@ -537,6 +537,29 @@ overflow-x: auto;
 
 .theorem::before {
   content: 'Theorem ' counter(theorem) '. ';
+  font-weight: bold;
+  font-style: normal;
+}
+
+/* Proposition */
+.proposition {
+  text-align: justify;
+  counter-increment: proposition;
+  display: block;
+  margin: 12px 0;
+  font-style: italic;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  content: "";
+  display: table;
+  clear: both;
+  padding: 8px 16px 8px 16px;
+  border-left: 5px solid #16b190 !important;
+  display: block;
+  overflow-x: auto;
+}
+
+.proposition::before {
+  content: 'Proposition ' counter(proposition) '. ';
   font-weight: bold;
   font-style: normal;
 }
